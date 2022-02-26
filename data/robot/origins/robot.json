@@ -1,6 +1,10 @@
 {
     "powers": [
-
+        "robot:faster_mining"
     ],
-    "icon": "minecraft:iron_pickaxe"
+    "icon": "minecraft:iron_pickaxe",
+    "order": 1,
+    "impact": 2,
+    "name": "MINER_DRONE",
+    "description": "INITILIZING SUBROUTINE: NEWPERSONALITYMATRIX()                          LOADING NEW PERSONALITY MATRIX... NEW PERSONALITY MATRIX LOADED                                                        §lGOAL: FIND MINERALS. MAKE PROFIT."
 }
