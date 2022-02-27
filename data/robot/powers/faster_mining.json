@@ -1,9 +1,14 @@
 {
-    "type": "origins:attribute",
+    "type": "origins:modify_break_speed",
     "modifier": {
-        "name": "Max health increase",
-        "attribute": "minecraft:effect.digSpeed",
-        "value": 4,
-        "operation": "addition"
-    }
+        "operation": "multiply_base",
+        "value": 1
+    },
+    "condition": {
+        "type": "origins:food_level",
+        "comparison": "!=",
+        "compare_to": 0
+    },
+    "name": "§lARM ENHANCEMENTS",
+    "description": "ENHANCED ARM SURVOS ENANCE MINING POWER BY 200 PERCENT"
 }

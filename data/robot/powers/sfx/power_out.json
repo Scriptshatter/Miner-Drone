@@ -1,0 +1,74 @@
+{
+    "type": "origins:multiple",
+    "lock_sfx": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "y7h6gtugj"
+        }
+    },
+    "play_powerdown_sfx": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "robot:sfx/power_out_lock_sfx",
+                    "inverted": true
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:toggle",
+                    "power": "robot:sfx/power_out_lock_sfx"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.respawn_anchor.deplete"
+                }
+            ]
+        },
+        "interval": 2
+    },
+    "play_powerup_sfx": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "!=",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "robot:sfx/power_out_lock_sfx"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:toggle",
+                    "power": "robot:sfx/power_out_lock_sfx"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.beacon.activate"
+                }
+            ]
+        },
+        "interval": 2
+    },
+    "hidden": true
+}

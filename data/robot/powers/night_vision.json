@@ -1,6 +1,11 @@
 {
     "type": "origins:night_vision",
     "strength": 1,
-    "name": "SUBROUTINE: ENHANCED_VISION",
-    "description": "INFERRED SCANNING SYSTEMS... §lOPERATIONAL."
+    "name": "§lENHANCED_VISION",
+    "description": "INFERRED SCANNING SYSTEMS... OPERATIONAL.",
+    "condition": {
+        "type": "origins:food_level",
+        "comparison": "!=",
+        "compare_to": 0
+    }
 }

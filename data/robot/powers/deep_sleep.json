@@ -1,0 +1,10 @@
+{
+    "type": "origins:prevent_sleep",
+    "message": "SYS_ERR 9: NOT ENOUGH FRICTION FOUND",
+    "block_condition": {
+        "type": "origins:height",
+        "comparison": ">=",
+        "compare_to": 0
+    },
+    "hidden": true 
+}

@@ -1,0 +1,13 @@
+{
+    "type": "origins:exhaust",
+    "interval": 1,
+    "exhaustion": 0.1,
+    "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">",
+        "compare_to": 0.0
+    },
+    "name": "§lWATER RESISTANT",
+    "description": "THIS DEVICE IS WATER RESISTANT, NOT WATER PROOF. DO NOT SUBMERGE IN WATER."
+}

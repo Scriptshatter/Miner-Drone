@@ -1,0 +1,16 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "name": "Compressing plates",
+        "attribute": "minecraft:generic.armor",
+        "value": 8,
+        "operation": "addition"
+    },
+    "tick_rate": 2,
+    "condition": {    
+        "type": "origins:power_active",
+        "power": "robot:sfx/compression_plates_lock_sfx"
+    },
+    "name": "§lCOMPRESSING PLATES",
+    "description": "COMPRESSING PLATES WILL INCRECE DEFENCIVE CAPIBILITYS AT DEEP LEVELS IN THE PLANETS CRUST."
+}
