@@ -1,0 +1,47 @@
+{
+    "type": "origins:multiple",
+    "blind": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "entity_action":{
+            "type": "origins:apply_effect",
+            "effect":{
+                "effect": "minecraft:blindness",
+                "duration": 100,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+        
+            }
+        },
+        "interval": 2
+    },
+    "immoble": {
+        "type": "origins:conditioned_attribute",
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "tick_rate": 2,
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": -1
+        }
+    },
+    "no_peeking":{
+        "type": "origins:prevent_entity_render",
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "hidden": true
+}

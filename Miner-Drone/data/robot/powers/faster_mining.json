@@ -1,0 +1,14 @@
+{
+    "type": "origins:modify_break_speed",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 1
+    },
+    "condition": {
+        "type": "origins:food_level",
+        "comparison": "!=",
+        "compare_to": 0
+    },
+    "name": "§lARM ENHANCEMENTS",
+    "description": "ENHANCED ARM SURVOS ENANCE MINING POWER BY 200 PERCENT"
+}

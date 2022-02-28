@@ -1,0 +1,84 @@
+{
+    "type": "origins:multiple",
+    "lock_sfx": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "y7h6gtugj"
+        }
+    },
+    "play_compress_sfx": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_block",
+                    "block_condition": {
+                        "type": "origins:height",
+                        "comparison": "<=",
+                        "compare_to": 14
+                    }
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "robot:sfx/compression_plates_lock_sfx",
+                    "inverted": true
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:toggle",
+                    "power": "robot:sfx/compression_plates_lock_sfx"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.iron_trapdoor.close",
+                    "volume": 2,
+                    "pitch": 0.5
+                }
+            ]
+        },
+        "interval": 2
+    },
+    "play_decompress_sfx": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_block",
+                    "block_condition": {
+                        "type": "origins:height",
+                        "comparison": ">",
+                        "compare_to": 14
+                    }
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "robot:sfx/compression_plates_lock_sfx"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:toggle",
+                    "power": "robot:sfx/compression_plates_lock_sfx"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.iron_trapdoor.open",
+                    "volume": 2,
+                    "pitch": 0.5
+                }
+            ]
+        },
+        "interval": 2
+    },
+    "hidden": true
+}

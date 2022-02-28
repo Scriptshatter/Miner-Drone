@@ -1,0 +1,34 @@
+{
+    "type": "origins:multiple",
+    "power_drain":{
+        "type": "origins:exhaust",
+        "interval": 10,
+        "exhaustion": 0.1,
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:lava",
+            "comparison": ">",
+            "compare_to": 0.0
+        }
+    },
+    "lava_vision":{
+        "type": "origins:lava_vision",
+        "s": 0,
+        "v": 200,
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "lava_immune": {
+        "type": "origins:fire_immunity",
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "name": "§lLAVA PLATING",
+    "description": "AS LONG AS POWER IS SUFFICIANT, A THIN LAYER OF NANOBOTS WILL BE ABLE TO GIVE YOU LAVA IMMUNITY"
+}

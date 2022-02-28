@@ -1,0 +1,25 @@
+{
+    "powers": [
+        "robot:faster_mining",
+        "robot:sfx/compression_plates",
+        "robot:compression_plates",
+
+        "robot:night_vision",
+        "robot:sfx/power_out",
+        "robot:power_out",
+        "robot:bad_sun",
+        "robot:deep_sleep",
+        "robot:iron_food",
+        "robot:lava_plating",
+        "robot:no_food",
+        "robot:no_regen",
+        "robot:no_starving",
+        "robot:recharge",
+        "robot:water_drain"
+    ],
+    "icon": "minecraft:iron_pickaxe",
+    "order": 1,
+    "impact": 2,
+    "name": "MINER_DRONE",
+    "description": "INITILIZING SUBROUTINE: NEWPERSONALITYMATRIX()                          LOADING NEW PERSONALITY MATRIX... NEW PERSONALITY MATRIX LOADED                                                        §lGOAL: FIND MINERALS. MAKE PROFIT."
+}
